@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #1f1f1f;
+    color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    padding: 0 2.2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+li {
+    list-style: none;
+}
+
+.logo h2 {
+    font-size: 1.7rem;
+}
+
+.nav-links {
+    padding: 0 2rem;
+}
+
+.nav-links ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-links ul li a {
+    color: #ffbd00;
+    text-decoration: none;
+
+}
+
+/* parte principal */
+.container {
+
+    padding-top: 2.2rem;
+
+}
+
+/* Formulários */
+#search-form {
+
+    padding: 1.5rem 2.3rem;
+    height: 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-form input[type="text"] {
+    width: 45vw;
+    padding: 0.7rem 1rem;
+    border-radius: 1.2rem;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: #f5f5f5;
+}
+
+#search-form .button {
+    padding: 6px 16px;
+    font-weight: 600;
+    border: none;
+    background-color: #ffbd08;
+    border-radius: 1rem;
+    margin-left: 15px;
+    cursor: pointer;
+
+}
+
+/*Parte do Catalogo do filme  */
+#movie-box {
+    padding: 2rem 2.6rem;
+    text-align: center;
+    margin-top: 2rem;
+    padding-bottom: 6rem;
+
+}
+#movie-box h2{
+    font-size: 28px;
+    margin-bottom: 35px;
+}
+
+#box-catalogy{
+    background-color: #303030;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 35px;
+    padding: 2.5rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px #ffbd00;
+    
+    
+    
+}
+.movie-catalogy{
+    background-color: #e29726;
+    width: 20vw;
+    padding: 2rem 0;
+    border-radius: 15px; 
+    margin: 0 auto;
+
+}
+.movie-catalogy .movie-image{
+margin: 0 1rem;
+}
+.movie-catalogy .movie-image img{
+    width: 13vw;
+    height: auto ;
+}
+#box-catalogy .movie-catalogy .movie-title {
+    color: #1f1f1f;
+    font-weight: 600;
+    font-size: 1rem;
+    
+}
+
+/* responsivo */
+@media(max-width: 550px){
+    
+}
+@media(max-width: 450px){
+    #search-form input[type="text"]{
+        width: 55vw;
+    }
+ .movie-catalogy{
+    width:28vw ;
+
+ }
+
+
+
+}
